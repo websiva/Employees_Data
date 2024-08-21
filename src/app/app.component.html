@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-md-9">
+      <div class="employee-table ">
+        <table class="table table-hover">
+          <thead>
+            <tr class="text-center">
+              <th>S.No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Total Work in Hours</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center" [ngClass]="{'lessWork':data.totalWorkingHours<100}"
+              *ngFor="let data of newList;let i=index">
+              <td>{{i+1}}</td>
+              <td>{{data.name}}</td>
+              <td>{{data.totalWorkingHours|number:'1.2-2'}}</td>
+              <td><a href="#" (click)="editButtonClicked()">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="pieChart">
+        <canvas id="pie-chart">
+        </canvas>
+      </div>
+    </div>
+  </div>
+</div>

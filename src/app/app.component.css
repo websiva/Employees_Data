@@ -1,0 +1,36 @@
+.pagination-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    font-size: 16px;
+}
+.lessWork td{
+    background-color: rgb(247, 151, 151)!important;
+}
+.employee-table{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.row{
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
